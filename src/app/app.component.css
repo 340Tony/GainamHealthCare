@@ -1,0 +1,42 @@
+.header {
+  background: rgb(142, 128, 235);
+  height: 80px;
+  display: flex;
+  width: 100%;
+  padding-right: 22px;
+}
+
+.about-section {
+  font-family: "Times New Roman", Times, serif;
+  background-color: white;
+  /*float: right;
+  justify-content: right;*/
+  margin-bottom: right;
+}
+
+.center {
+  display: flex;
+  /*justify-content: space-between;*/
+  height: 300px;
+  background-color: white;
+  justify-content: center;
+  padding: 10px;
+  float: right;
+}
+.hours {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  padding: 10px;
+}
+
+.container {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 10px;
+  color: black;
+  float: left;
+}
+.form__input-group {
+  font-size: 17px;
+  margin: left;
+}
