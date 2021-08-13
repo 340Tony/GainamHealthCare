@@ -1,6 +1,6 @@
 <style>
   h1 {
-    color: red;
+    color: black;
     font-style: italic;
   }
 
@@ -10,179 +10,233 @@
   }
 </style>
 
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">Navbar</a>
-    <button
-      class="navbar-toggler"
-      type="button"
-      data-bs-toggle="collapse"
-      data-bs-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent"
-      aria-expanded="false"
-      aria-label="Toggle navigation"
-    >
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#">Login</a>
-        </li>
-        <li class="nav-item dropdown">
-          <a
-            class="nav-link dropdown-toggle"
-            href="#"
-            id="navbarDropdown"
-            role="button"
-            data-bs-toggle="dropdown"
-            aria-expanded="false"
-          >
-            Appointment
-          </a>
-          <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Appointment Dates</a></li>
-            <li><a class="dropdown-item" href="#">Medical History</a></li>
-            <li><a class="dropdown-item" href="#">Doctors avaliablity</a></li>
-          </ul>
-        </li>
-        <li class="nav-item">
-          <a
-            class="nav-link disabled"
-            href="#"
-            tabindex="-1"
-            aria-disabled="true"
-            >Disabled</a
-          >
-        </li>
-      </ul>
-      <form class="d-flex">
-        <input
-          class="form-control me-2"
-          type="search"
-          placeholder="Search"
-          aria-label="Search"
-        />
-        <button class="btn btn-outline-success" type="submit">Search</button>
-      </form>
-    </div>
-  </div>
-</nav>
-<router-outlet></router-outlet>
-
 <html>
-  <div class="center">
-    <head>
-      <title>GainAm HealthCare Services</title>
-    </head>
-    <body>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">GainAm HealthCare</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Login</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Locations</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Reviews</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Pay Your Bill</a>
+          </li>
+
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              id="navbarDropdown"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Appointment
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <li><a class="dropdown-item" href="#">Make Appointment</a></li>
+              <li><a class="dropdown-item" href="#">Medical History</a></li>
+              <li><a class="dropdown-item" href="#">Doctors avaliablity</a></li>
+            </ul>
+          </li>
+          <li class="nav-item"></li>
+        </ul>
+        <form class="d-flex">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  <router-outlet></router-outlet>
+
+  <body>
+    <div class="Header">
       <h1>Welcome to GainAm HealthCare Services</h1>
       <p>Your Health Starts Here!</p>
       <img src="/assets/images/download.png" alt="img" />
-    </body>
-  </div>
+    </div>
+
+    <span class="hours">
+      <h3>Office Hours</h3>
+      <ul>
+        <li>Monday 9:00 am - 4:00 PM</li>
+        <li>Tuesday 9:00 am - 4:00 PM</li>
+        <li>Friday 9:00 am - 3:00 PM</li>
+        <li>Saturday 9:00 am - 1:00 PM</li>
+      </ul>
+    </span>
+
+    <div class="about-section">
+      <h1>About Us</h1>
+
+      <p>
+        Welcome to Gainam Healthcare services at Hicksville. Here we treat you
+        as our guest, We strive to provide you with only the best healthcare
+        options to ensure that you always leave here smiling.
+      </p>
+      <p>
+        The team at Gainam Healthcare services in Hicksville are trained and
+        experienced professionals in the healthcare feild
+      </p>
+    </div>
+
+    <div>
+      <div class="container">
+        <form class="form" id="login">
+          <h2>GainAm Health Care System</h2>
+          <br />
+          <h2 class="form__title">Signup Here</h2>
+          <div class="form__message form__message--error"></div>
+          <label>Name</label>
+          <div class="form__input-group">
+            <input
+              type="text"
+              class="form__input"
+              autofocus
+              placeholder="First Name"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <label>Middle Name</label>
+          <div class="form__input-group">
+            <input
+              type="text"
+              class="form__input"
+              autofocus
+              placeholder="Middle Name"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <label>Last Name</label>
+          <div class="form__input-group">
+            <input
+              type="text"
+              class="form__input"
+              autofocus
+              placeholder="Last Name"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <label>Email</label>
+          <div class="form__input-group">
+            <input
+              type="email"
+              class="form__input"
+              autofocus
+              placeholder="Email"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <label>Password</label>
+          <div class="form__input-group">
+            <input
+              type="password"
+              class="form__input"
+              autofocus
+              placeholder="password"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <label>Confirm Password</label>
+          <div class="form__input-group">
+            <input
+              type="password"
+              class="form__input"
+              autofocus
+              placeholder="password"
+            />
+            <div class="form__input-error-message"></div>
+          </div>
+          <label>Gender</label
+          ><input type="radio" name="gender" value="male" /> Male
+          <input type="radio" name="gender" value="female" /> Female
+          <br /><label>DOB</label> <input type="date" /> <br />
+          <button class="form__button" type="submit">
+            <a href="Thankyou.html">Signup</a>
+          </button>
+        </form>
+      </div>
+
+      <div class="text5">
+        <p>Welcome To The Best HealthCare Service</p>
+        <p>
+          Here at GainAm we genuinely care for our customers,<br />
+          Your health is out #1 priority!
+        </p>
+      </div>
+    </div>
+  </body>
+
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+
+  <footer>
+    <div class="footer">
+      <div class="footer_menu">
+        <div class="col_1">
+          <div class="title">Company</div>
+          <ul>
+            <li><a routerLink="/aboutus" href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+            <li><a href="#">Profile</a></li>
+          </ul>
+        </div>
+        <div class="col_2">
+          <div class="title">Help & Support</div>
+          <ul>
+            <li><a href="#">Support Center</a></li>
+            <li><a href="#">Call Center</a></li>
+            <li><a href="#">Terms & Conditions</a></li>
+          </ul>
+        </div>
+
+        <div class="col_3">
+          <div class="title">Social Media</div>
+          <ul>
+            <li>
+              <a href="#"><a href="#" class="fa fa-facebook"></a></a>
+            </li>
+            <li>
+              <a href="#"><a href="#" class="fa fa-instagram"></a></a>
+            </li>
+            <li>
+              <a href="#"><a href="#" class="fa fa-whatsapp"></a></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 </html>
-
-<div class="hours">
-  <li>Monday <span>9:00 am - 4:00 PM</span></li>
-  <br />
-  <li>Tuesday <span>9:00 am - 4:00 PM</span></li>
-  <br />
-  <li>Friday <span>9:00 am - 3:00 PM</span></li>
-  <br />
-  <li>Saturday <span>9:00 am - 1:00 PM</span></li>
-  <br />
-</div>
-
-<div>
-  <div class="about-section">
-    <h1>About Us</h1>
-
-    <p>
-      Welcome to Gainam Healthcare services at Hicksville. Here we treat you as
-      our guest, We strive to provide you with only the best healthcare options
-      to ensure that you always leave here smiling.
-    </p>
-    <p>
-      The team at Gainam Healthcare services in Hicksville are trained and
-      experienced professionals in the healthcare feild
-    </p>
-  </div>
-</div>
-
-<head> </head>
-
-<div class="container">
-  <form class="form" id="login">
-    <h1>GainAm Health Care System</h1>
-    <br />
-    <h1 class="form__title">Signup Here</h1>
-    <div class="form__message form__message--error"></div>
-    <label>Name</label>
-    <div class="form__input-group">
-      <input
-        type="text"
-        class="form__input"
-        autofocus
-        placeholder="First Name"
-      />
-      <div class="form__input-error-message"></div>
-    </div>
-    <label>Middle Name</label>
-    <div class="form__input-group">
-      <input
-        type="text"
-        class="form__input"
-        autofocus
-        placeholder="Middle Name"
-      />
-      <div class="form__input-error-message"></div>
-    </div>
-    <label>Last Name</label>
-    <div class="form__input-group">
-      <input
-        type="text"
-        class="form__input"
-        autofocus
-        placeholder="Last Name"
-      />
-      <div class="form__input-error-message"></div>
-    </div>
-    <label>Email</label>
-    <div class="form__input-group">
-      <input type="email" class="form__input" autofocus placeholder="Email" />
-      <div class="form__input-error-message"></div>
-    </div>
-    <label>Password</label>
-    <div class="form__input-group">
-      <input
-        type="password"
-        class="form__input"
-        autofocus
-        placeholder="password"
-      />
-      <div class="form__input-error-message"></div>
-    </div>
-    <label>Confirm Password</label>
-    <div class="form__input-group">
-      <input
-        type="password"
-        class="form__input"
-        autofocus
-        placeholder="password"
-      />
-      <div class="form__input-error-message"></div>
-    </div>
-    <label>Gender</label><input type="radio" name="gender" value="male" /> Male
-    <input type="radio" name="gender" value="female" /> Female <br /><label
-      >DOB</label
-    >
-    <input type="date" /> <br />
-    <button class="form__button" type="submit">
-      <a href="Thankyou.html">Signup</a>
-    </button>
-  </form>
-</div>

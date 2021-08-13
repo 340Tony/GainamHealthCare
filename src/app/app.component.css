@@ -1,33 +1,24 @@
-.header {
-  background: rgb(142, 128, 235);
-  height: 80px;
-  display: flex;
-  width: 100%;
-  padding-right: 22px;
-}
-
 .about-section {
   font-family: "Times New Roman", Times, serif;
-  background-color: white;
-  /*float: right;
-  justify-content: right;*/
-  margin-bottom: right;
+  text-align: center;
+  background-color: yellow;
 }
 
-.center {
-  display: flex;
-  /*justify-content: space-between;*/
-  height: 300px;
-  background-color: white;
-  justify-content: center;
-  padding: 10px;
-  float: right;
+.Header {
+  text-align: center;
+  background-color: yellow;
 }
-.hours {
-  display: flex;
-  justify-content: space-between;
-  flex-grow: 1;
-  padding: 10px;
+
+.Header img {
+  padding-bottom: 10px;
+  width: 400px;
+}
+.hours li {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  display: inline;
+  padding-bottom: 5px;
+  padding: 0.5em;
 }
 
 .container {
@@ -35,8 +26,111 @@
   font-size: 10px;
   color: black;
   float: left;
+  width: 50%;
 }
+
 .form__input-group {
   font-size: 17px;
   margin: left;
+}
+
+body {
+  background: white;
+}
+
+.partners {
+  margin-bottom: 100%;
+}
+
+.footer {
+  margin-top: 60px;
+  width: 100%;
+  background: white;
+  padding: 20px;
+  height: 50px;
+  left: 0;
+  bottom: 0;
+}
+
+.footer .footer_menu ul li a:hover {
+  color: rgb(0, 0, 0);
+}
+
+.footer .footer_menu {
+  max-width: 900px;
+  width: 100%;
+  display: flex;
+  margin: 0 auto 10px;
+  justify-content: space-between;
+  background-color: yellow;
+}
+
+.footer .footer_menu .title {
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer .footer_menu ul li a {
+  display: block;
+  margin-bottom: 10px;
+  color: black;
+}
+
+.footer .partners {
+  margin-bottom: 0px;
+}
+
+.footer .partners ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.footer .partners li a {
+  width: 101px;
+  height: 50px;
+  display: block;
+  margin: 0 5px;
+}
+
+.footer .partners li a.partner1 {
+  width: 50px;
+  height: 50px;
+}
+.footer .partners li a.partner2 {
+  width: 50px;
+  height: 51px;
+}
+.footer .partners li a.partner3 {
+  width: 50px;
+  height: 51px;
+}
+.footer .partners li a.partner4 {
+  width: 50px;
+  height: 51px;
+}
+
+@media (max-width: 768px) {
+  .wrapper .navbar .logo {
+    font-size: 20px;
+  }
+  .main_container {
+    padding: 25px;
+  }
+
+  .footer .footer_menu {
+    flex-direction: column;
+    width: 220px;
+    margin: 0 auto 25px;
+  }
+  .footer .footer_menu > div {
+    margin: 0px 0;
+  }
+  .footer .partners ul li a {
+    margin: 5px;
+  }
+}
+
+.text5 {
+  font-size: 60%;
 }
